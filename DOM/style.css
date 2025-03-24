@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card{
+        height: 200px;
+        width: 300px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        
+        .dot{
+            height: 0px;
+            width: 0px;
+            border-radius: 50%;
+            /* background-color: rgb(0, 0, 0); */
+            transition: all 0.1s ease ;
+            display: none;
+            position: absolute;
+            box-shadow: 0px 0px 70px 50px rgba(255, 255, 255, 0.512);
+
+        }
+    }
+
+    
+}
